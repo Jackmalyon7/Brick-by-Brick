@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brick by Brick Mentoring</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-blue: #0b1f45;
+      --accent-gold: #d4af37;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4ff, #ffffff);
+      margin: 0;
+      padding: 0;
+      color: #1e293b;
+    }
+    nav {
+      background-color: var(--primary-blue);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      background-color: var(--primary-blue);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      font-weight: 300;
+    }
+    .container {
+      max-width: 850px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    }
+    .intro-image {
+      max-width: 350px;
+      display: block;
+      margin: 2rem auto;
+
+      width: 100%;
+      border-radius: 12px;
+      margin: 1.5rem 0;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+    .section h2 {
+      font-size: 1.75rem;
+      color: var(--primary-blue);
+      border-bottom: 2px solid var(--accent-gold);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .section ul {
+      padding-left: 1.5rem;
+    }
+    .section ul li {
+      margin-bottom: 0.75rem;
+    }
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+    .cta a {
+      background-color: var(--accent-gold);
+      color: var(--primary-blue);
+      padding: 0.9rem 1.8rem;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 10px rgba(251, 191, 36, 0.3);
+      transition: background-color 0.3s, transform 0.2s;
+    }
+    .cta a:hover {
+      background-color: #bfa02f;
+      transform: translateY(-2px);
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.95rem;
+      color: #6b7280;
+      background-color: #f9fafb;
+      margin-top: 3rem;
+      border-top: 1px solid #e5e7eb;
+    }
+    .hidden {
+      display: none;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  </style>
+  <script>
+    function showTab(tabId) {
+      document.getElementById("main").classList.add("hidden");
+      document.getElementById("about").classList.add("hidden");
+      document.getElementById("form").classList.add("hidden");
+      document.getElementById(tabId).classList.remove("hidden");
+    }
+    </script>
+    function showTab(tabId) {
+      document.getElementById("main").classList.add("hidden");
+      document.getElementById("about").classList.add("hidden");
+      document.getElementById(tabId).classList.remove("hidden");
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <a href="#" onclick="showTab('main')">Home</a>
+    <a href="#" onclick="showTab('about')">About Us</a>
+  </nav>
+
+  <header>
+    <h1>🧱 Brick by Brick Mentoring</h1>
+    <p>Real Support. Real Results. No BS.</p>
+  </header>
+
+  <div class="container" id="main">
+        <div class="section">
+      <h2>Struggling to get your first R2R deal?</h2>
+      <p>Want to fast-track your HMO success without watching endless videos or dropping £10k+ on impersonal, lazy mentoring that leaves you more confused than when you started?</p>
+    </div>
+    <div class="section">
+      <h2>What You’ll Get</h2>
+      <ul>
+        <li>✅ 6 x 1-hour Zoom Mentoring Calls – tailored, practical, no fluff</li>
+        <li>✅ On-Site Visits to Our HMOs – see real setups, learn hands-on</li>
+        <li>✅ Room Set-Up Blueprint – prep and dress rooms like a pro</li>
+        <li>✅ SpareRoom & Marketing Mastery – learn to fill rooms fast</li>
+        <li>✅ Agent Strategy & Negotiation Support</li>
+        <li>✅ Compliance Checklist & Live WhatsApp Advice</li>
+        <li>✅ Onboarding, Systems, and Accountability</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Who’s This For?</h2>
+      <ul>
+        <li>✅ You've tried landing your first R2R and keep hitting walls</li>
+        <li>✅ You're tired of being sold dreams by property gurus</li>
+        <li>✅ You want real-life, in-the-trenches support</li>
+        <li>✅ You're ready to take action and build a cashflowing business</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Investment</h2>
+      <p>We’re only taking on <strong>two mentees</strong> at a time to keep it personal and hands-on.</p>
+      <p><strong>Price:</strong> £997</p>
+      <p>If you need contracts as well, then we've got your back — we can add this to your plan for only <strong>£199</strong>, including ASTs, management contracts, and more.</p>
+    </div>
+    <div class="cta">
+      <a href="#" onclick="showTab('form')">Register Your Interest</a>
+    </div>
+  <img src="IMG_1325.jpg" alt="Brick by Brick Team" class="intro-image">
+</div>
+
+  <div class="container hidden" id="about">
+    <div class="section">
+      <h2>Who We Are</h2>
+      <p>We’re Jack and Dan — just two ordinary guys who refused to quit.</p>
+      <p>We met at a networking event: Jack was deep in the R2HMO grind, Dan was sourcing deals. It didn’t take long to realise we had skills that seriously clicked — and more importantly, a shared mindset. We teamed up, focused on Rent-to-Rent HMOs, and started pushing together.</p>
+      <p>But let’s be real — it wasn’t all wins and high-fives.</p>
+      <p>We spent <strong>14 months hearing "no"</strong>. Rejections, ghosted viewings, wasted time... you name it. We were <em>this close</em> to packing it in and going back to the drawing board. Then finally — <strong>deal 1 landed in September 2024</strong>.</p>
+      <p>Fast forward to now, and we’ve built a growing R2HMO business with <strong>10 HMOs</strong>, housing <strong>70 tenants</strong>, and bringing in <strong>over £5,000/month profit</strong>. We’ve lived the pain, made the mistakes, and stuck it out when most would’ve quit.</p>
+      <p>We’ve also been through the so-called “mentoring” packages — paying <strong>£12,000+ between us</strong> for big promises, generic videos, and zero accountability. What we really needed? Someone who was <em>actually in the game</em>, showing us how it’s done — not someone pointing at a whiteboard.</p>
+      <p>So we built what we wished we had.</p>
+      <p><strong>Brick-by-Brick Mentoring</strong> is hands-on, real-world support. No fluff. No fake gurus. Just solid advice from two guys still in the trenches, building portfolios one deal at a time. If you’re serious, ready to take action, and tired of going it alone — this is for you.</p>
+      <p>Let’s build it. Brick by brick.</p>
+      <div class="gallery">
+        <img src="IMG_0519.jpg">
+        <img src="IMG_0545.jpg">
+        <img src="adfe6340-f644-4fc9-b1fb-6512b39ce2d6.JPG">
+        <img src="IMG_1082.JPG">
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container hidden" id="form">
+    <div class="section">
+      <h2>Register Your Interest</h2>
+      <form style="display: flex; flex-direction: column; gap: 1rem;">
+        <input type="text" name="name" placeholder="Your Full Name" required style="padding: 0.8rem; font-size: 1rem;">
+        <input type="email" name="email" placeholder="Your Email Address" required style="padding: 0.8rem; font-size: 1rem;">
+        <input type="tel" name="phone" placeholder="Your Phone Number" required style="padding: 0.8rem; font-size: 1rem;">
+        <textarea name="message" placeholder="Why do you want mentoring?" rows="5" required style="padding: 0.8rem; font-size: 1rem;"></textarea>
+        <button type="submit" style="background-color: var(--accent-gold); color: var(--primary-blue); padding: 1rem; font-weight: 700; font-size: 1.1rem; border: none; border-radius: 10px; cursor: pointer;">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Brick by Brick Mentoring. Built by real investors for real results.
+  </footer>
+</body>
+</html>
